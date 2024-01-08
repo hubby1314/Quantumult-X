@@ -12,7 +12,6 @@ TG频道群：https://t.me/py996
 使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 
 更多资源请微信搜索小程序【屌丝博客】
-
 *******************************
 
 [rewrite_local]
@@ -27,6 +26,13 @@ hostname = www.liwoxiao.com
 
 var body = $response.body.replace(/playerInfo_gold\\":\d+/g,'playerInfo_gold\\":88888899')
 .replace(/playerInfo_godGold\\":\d+/g,'playerInfo_godGold\\":666666')
+.replace(/playerInfo_streetHelper\\":{\\"level\\":\d+/g,'playerInfo_streetHelper\\":{\\"level\\":10')
+.replace(/awakeCount\\":\d+/g,'awakeCount\\":120')
+.replace(/completeAwakeCount\\":\d+/g,'completeAwakeCount\\":120')
+.replace(/totalAwakeTime\\":\d+.d+/g,'totalAwakeTime\\":30')
+.replace(/levelAwardGetInfo\\":[1,2,3,4,5]/g,'levelAwardGetInfo\\":[1,2,3,4,5,6,7,8,9,10]')
+.replace(/playerInfo_composeCredits\\":{\\"1\\":21,\\"2\\":14,\\"3\\":13}/g,'playerInfo_composeCredits\\":{\\"1\\":1000,\\"2\\":1000,\\"3\\":1000}')
+ .replace(/playerInfo_composeCredits\\":\d+/g,'playerInfo_godGold\\":666666')
 .replace(/playerInfo_buildScore\\":\d+/g,'playerInfo_buildScore\\":88888888')
 .replace(/playerInfo_shipuScore\\":\d+/g,'playerInfo_shipuScore\\":8888')
 .replace(/playerInfo_diamond\\":\d+/g,'playerInfo_diamond\\":8888')
