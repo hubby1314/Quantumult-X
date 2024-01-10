@@ -29,10 +29,10 @@ hostname = www.liwoxiao.com
 
 *******************************/
 
-var body = $response.body.replace(/playerInfo_gold\\":\d+/g,'playerInfo_gold\\":3600000000')
+var body = $response.body.replace(/playerInfo_gold\\":\d+/g,'playerInfo_gold\\":2400000000')
 .replace(/playerInfo_godGold\\":\d+/g,'playerInfo_godGold\\":1666666')
 .replace(/playerInfo_composeCredits\\":{\\"1\\":\d+,\\"2\\":\d+,\\"3\\":\d+}/g,'playerInfo_composeCredits\\":{\\"1\\":8800,\\"2\\":8800,\\"3\\":8800}')
- .replace(/playerInfo_clover\\":\d+/g,'playerInfo_clover\\":266666')
+ .replace(/playerInfo_clover\\":\d+/g,'playerInfo_clover\\":2266666')
 .replace(/playerInfo_buildScore\\":\d+/g,'playerInfo_buildScore\\":88888888')
 .replace(/playerInfo_shipuScore\\":\d+/g,'playerInfo_shipuScore\\":8888')
 .replace(/playerInfo_diamond\\":\d+/g,'playerInfo_diamond\\":8888')
