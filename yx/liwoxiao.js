@@ -36,5 +36,5 @@ var body = $response.body.replace(/playerInfo_gold\\":\d+/g,'playerInfo_gold\\":
 .replace(/playerInfo_buildScore\\":\d+/g,'playerInfo_buildScore\\":88888888')
 .replace(/playerInfo_shipuScore\\":\d+/g,'playerInfo_shipuScore\\":8888')
 .replace(/playerInfo_diamond\\":\d+/g,'playerInfo_diamond\\":8888')
-.replace(/playerInfo_fuValue\\":\d+/g,'playerInfo_fuValue\\":8888')
+.replace(/playerInfo_fuValue\\":\d+/g,'playerInfo_fuValue\\":98888')
 $done({ body });
