@@ -31,14 +31,14 @@ var body = $response.body
     // .replace(/playerInfo_buildScore\\":\d+/g,'playerInfo_buildScore\\":88888888')
     // .replace(/playerInfo_shipuScore\\":\d+/g,'playerInfo_shipuScore\\":8888')
     // 钻石
-    .replace(/playerInfo_diamond\\":\d+/g,'playerInfo_diamond\\":8888')
+    .replace(/playerInfo_diamond\\":\d+/g,'playerInfo_diamond\\":180000')
     // 厨师帽
     .replace(/playerInfo_cookHat\\":\d+/g,'playerInfo_cookHat\\":180000')
     // 黄金厨师帽
     .replace(/playerInfo_goldCookHat\\":\d+/g,'playerInfo_goldCookHat\\":180000')
     // 普通抽奖券
-    .replace(/playerInfo_normalTicket\\":\d+/g,'playerInfo_normalTicket\\":188888')
+    .replace(/playerInfo_normalTicket\\":\d+/g,'playerInfo_normalTicket\\":180000')
     // 超级抽奖券
-    .replace(/playerInfo_specialTicket\\":\d+/g,'playerInfo_specialTicket\\":188888');
+    .replace(/playerInfo_specialTicket\\":\d+/g,'playerInfo_specialTicket\\":180000');
 
 $done({ body });
