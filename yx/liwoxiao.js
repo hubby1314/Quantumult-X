@@ -17,7 +17,7 @@ TG频道群：https://t.me/py996
 
 [rewrite_local]
 
-^http[s]?:\/\/www.liwoxiao.com\/api\/game\/account\/data\/download url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/yx/liwoxiao.js
+^http[s]?:\/\/www.liwoxiao.com\/api\/game\/account\/data\/download url script-response-body https://raw.githubusercontent.com/hubby1314/Quantumult-X/main/yx/liwoxiao.js
 
 [mitm] 
 
@@ -25,8 +25,20 @@ hostname = www.liwoxiao.com
 
 *******************************/
 
-var body = $response.body.replace(/playerInfo_gold\\":\d+/g,'playerInfo_gold\\":88888888')
-.replace(/playerInfo_buildScore\\":\d+/g,'playerInfo_buildScore\\":88888888')
-.replace(/playerInfo_shipuScore\\":\d+/g,'playerInfo_shipuScore\\":8888')
-.replace(/playerInfo_diamond\\":\d+/g,'playerInfo_diamond\\":8888')
+var body = $response.body
+    // 金萝卜
+    .replace(/playerInfo_gold\\":\d+/g,'playerInfo_gold\\":88888888')
+    // .replace(/playerInfo_buildScore\\":\d+/g,'playerInfo_buildScore\\":88888888')
+    // .replace(/playerInfo_shipuScore\\":\d+/g,'playerInfo_shipuScore\\":8888')
+    // 钻石
+    .replace(/playerInfo_diamond\\":\d+/g,'playerInfo_diamond\\":8888')
+    // 厨师帽
+    .replace(/playerInfo_cookHat\\":\d+/g,'playerInfo_cookHat\\":180000')
+    // 黄金厨师帽
+    .replace(/playerInfo_goldCookHat\\":\d+/g,'playerInfo_goldCookHat\\":180000')
+    // 普通抽奖券
+    .replace(/playerInfo_normalTicket\\":\d+/g,'playerInfo_normalTicket\\":188888')
+    // 超级抽奖券
+    .replace(/playerInfo_specialTicket\\":\d+/g,'playerInfo_specialTicket\\":188888');
+
 $done({ body });
